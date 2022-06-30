@@ -21,5 +21,3 @@ urlpatterns = [
     re_path(r'^v2/category/', include('category.urls', namespace='v2')),
     path('admin/', admin.site.urls)
 ]
-
-app_name = 'category'

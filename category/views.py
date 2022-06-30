@@ -2,14 +2,19 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from category.models import Category
-from category.serializers import CategorySerializer
+from category.serializers import CategorySerializer, CategorySerializerV2
 
 
 @api_view(['GET', 'POST'])
 def category_list(request, format=None):
     if request.method == 'GET':
+        if request.version == 'v1':
+            serializer = CategorySerializer
+        elif request.version == 'v2':
+            serializer = CategorySerializerV2
+
         categories = Category.objects.all()
-        serializer = CategorySerializer(categories, many=True)
+        serializer = serializer(categories, many=True)
         return Response(serializer.data)
 
     elif request.method == 'POST':

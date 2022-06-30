@@ -31,8 +31,10 @@
     python manage.py createsuperuser
 
 ## 5. Visit below two urls
-    - http://127.0.0.1:8000/v1/category/
-    <img width="1194" alt="Category v1" src="https://user-images.githubusercontent.com/25084128/176759216-21051d8c-771b-4dda-9954-74514164a194.png">
+    - Category V1: http://127.0.0.1:8000/v1/category/
 
-    - http://127.0.0.1:8000/v2/category/
-    <img width="1192" alt="Category v2" src="https://user-images.githubusercontent.com/25084128/176759295-15de2f06-9450-4219-a9ef-6d6a4aa0b6b4.png">
+<img width="1192" alt="Category v1" src="https://user-images.githubusercontent.com/25084128/176759567-e820e9c2-d723-4460-a7bd-da611f3a134e.png">
+
+    - Category V2: http://127.0.0.1:8000/v2/category/
+
+<img width="1194" alt="Category v2" src="https://user-images.githubusercontent.com/25084128/176759457-13f7a66b-322a-43ff-8b80-67c26e97290c.png">
